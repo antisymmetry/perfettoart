@@ -1,13 +1,10 @@
-<head>
-    <script>        
+<div>        
+    <img id="myImage" alt="Red dot" />
+  </div>
+
+<script>        
     const imgBase64 = new URLSearchParams(window.location.search).get('p');
 
-    document.getElementById('artImage').src=`data:image/gif;base64,${imgBase64}`
+    document.getElementById('myImage').src=`data:image/png;base64, ${imgBase64}`
 
 </script>
-</head>
-<html>
-<div>        
-    <img id="artImage" alt="art" />
-  </div>
-</html>
